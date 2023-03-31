@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(2, 2, 12);
+}
+.content {
+  padding: 0 8rem;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3vw;
+  padding: 2.5rem 5rem;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8vw;
+  line-height: 29px;
+  color: #efefef;
+  text-align: left;
+}
+.navItems {
+  cursor: pointer;
+}
+.navItems:hover {
+  color: rgb(33, 60, 238);
+  scale: 1.15;
+  transition: all 0.6s;
+}
+.banner {
+  display: flex;
+  gap: 4vw;
+  padding: 12vw 5rem;
+}
+.banner .info {
+  width: 63.8vw;
+}
+.header {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6vw;
+  line-height: 80px;
+  color: #efefef;
+  width: 36vw;
+}
+.desc {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  /* width: 38vw; */
+  font-size: 1.458vw;
+  line-height: 30px;
+  padding: 2rem 0 2.6rem;
+  /* Dark Color */
+
+  color: #efefef;
+}
+/* .button2 {
+    background: white;
+    color: rgb(33, 60, 238);
+    /* color: #efefef; */
+  /* border-radius: 10px; */
+  /* border: none;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 29px;
+  padding: 1rem 1.5rem;
+  transition: transform .2 ease;   */
+/* 
+.button2:active{
+    transform: scale(0.96);
+} */
+
+button {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  background: rgb(33, 60, 238);
+  border-radius: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 29px;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  border: none;
+  /* width: 11vw;    */
+  text-align: center;
+  animation: popIn 0.6s ease-out forwards;
+  transition: all .2s ease;
+  opacity: 0;
+  animation-delay: 4s;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.profile {
+  width: 21vw;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
