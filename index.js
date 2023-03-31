@@ -100,13 +100,10 @@ button.addEventListener("clicked", (e) => {
 });
 
 function onButtonClick (){
-    console.log("hello")
-    // using Java Script method to get PDF file
+    console.log("hello");
     fetch('Resume.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
+        response.blob().then(blob => { 
             const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
             alink.download = 'Resume.pdf';
