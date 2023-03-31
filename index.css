@@ -167,6 +167,8 @@ button:active {
     .button{
         width: 100%;
         font-size: 5.7vw;
+  animation-delay: 4.5s;
+
     }
     .profile{
         width: 35vw;
