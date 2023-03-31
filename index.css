@@ -168,5 +168,8 @@ button:active {
         width: 100%;
         font-size: 5.7vw;
     }
+    .profile{
+        width: 35vw;
+    }
 
 }
