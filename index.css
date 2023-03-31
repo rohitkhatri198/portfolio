@@ -173,4 +173,7 @@ button:active {
   .profile {
     width: 35vw;
   }
+  .navItems{
+    display: none;
+  }
 }
