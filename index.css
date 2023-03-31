@@ -63,8 +63,8 @@ body {
     background: white;
     color: rgb(33, 60, 238);
     /* color: #efefef; */
-  /* border-radius: 10px; */
-  /* border: none;
+/* border-radius: 10px; */
+/* border: none;
   font-family: "Heebo";
   font-style: normal;
   font-weight: 500;
@@ -94,7 +94,7 @@ button {
   /* width: 11vw;    */
   text-align: center;
   animation: popIn 0.6s ease-out forwards;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   opacity: 0;
   animation-delay: 4s;
 }
@@ -136,42 +136,41 @@ button:active {
   }
 }
 
-@media screen and (max-width:767px){
-    .banner{
-        flex-direction: column-reverse;
-    }
-    .content{
-        padding: 0 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner{
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .header{
-        width: 64vw;
-        font-size: 6.5vw;
-        text-align: center;
-        line-height: 28px;
-    }
-    .desc{
-        text-align: center;
-        font-size: 3.458vw;
-        line-height: 22px;
-    }
-    .button{
-        width: 100%;
-        font-size: 5.7vw;
-  animation-delay: 4.5s;
-
-    }
-    .profile{
-        width: 35vw;
-    }
-
+@media screen and (max-width: 767px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .content {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+  }
+  .header {
+    width: 64vw;
+    font-size: 6.5vw;
+    text-align: center;
+    line-height: 28px;
+  }
+  .desc {
+    text-align: center;
+    font-size: 3.458vw;
+    line-height: 22px;
+  }
+  .button {
+    width: 100%;
+    font-size: 5.7vw;
+    animation-delay: 4.5s;
+  }
+  .profile {
+    width: 35vw;
+  }
 }
