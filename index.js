@@ -113,3 +113,10 @@ function onButtonClick (){
 
 
 }
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped') || card.classList.remove('is-flipped');
+  });
+});

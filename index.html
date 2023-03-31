@@ -12,7 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -27,23 +31,46 @@
         <!--Banner-->
         <div class="banner">
           <div class="info">
-            <h1 class="header" data-aos="fade-right" data-aos-duration="500" data-aos-delay="100" >Hi, I am Rohit, Web Developer</h1>
+            <h1
+              class="header"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              Hi, I am Rohit, Web Developer
+            </h1>
             <div class="desc">
               <span id="typed" class="typed"></span>
             </div>
-            <button class="button" onclick={onButtonClick()}>Download Resume</button>
+            <button class="button" onclick="{onButtonClick()}">
+              Download Resume
+            </button>
             <!-- <button class="button2">Download Resume</button> -->
           </div>
-          <div class="imgSection">
-            <img src="/images/rohit.png" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="profile" />
+          <div
+            class="imgSection"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="card">
+              <div class="card__face front-side">
+                <img src="/images/rohit.png" class="profile" />
+              </div>
+              <div class="card__face back-side">
+                <a rel="noRel" target="_blank" href="https://www.linkedin.com/in/rohit-khatri-29a36a244/">
+                  <i class="fa fa-linkedin" style="font-size: 36px ; color: white;"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <script src="index.js"></script>
     <script>
-        AOS.init();
-      </script>
+      AOS.init();
+    </script>
   </body>
 </html>
