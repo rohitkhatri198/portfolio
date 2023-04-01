@@ -532,6 +532,6 @@ form .submitBtn:active {
     font-size: 6.7vw;
     margin: 0.65rem 0;
     justify-content: center;
-    width: 42vw;
+    width: 100%;
   }
 }
