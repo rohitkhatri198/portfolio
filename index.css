@@ -348,6 +348,7 @@ form .submitBtn {
   border: none;
   transition: transform 0.2s ease;
   margin: 2rem 0;
+  width: 12vw;
 }
 form .submitBtn:active {
   transform: scale(0.96);
@@ -529,7 +530,8 @@ form .submitBtn:active {
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
     font-size: 6.7vw;
-    margin: 1rem 0;
+    margin: 0.65rem 0;
     justify-content: center;
+    width: 22vw;
   }
 }
