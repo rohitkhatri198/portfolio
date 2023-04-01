@@ -246,7 +246,7 @@ a {
 /* contactus */
 
 .contactUs {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem;
 }
 
 .contactUs h3 {
@@ -348,7 +348,7 @@ form .submitBtn {
   border: none;
   transition: transform 0.2s ease;
   margin: 2rem 0;
-  width: 12vw;
+  /* width: 12vw; */
 }
 form .submitBtn:active {
   transform: scale(0.96);
@@ -530,7 +530,7 @@ form .submitBtn:active {
     width: 100%;
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
-    font-size: 5.7vw;
+    font-size: 4.7vw;
     justify-content: center;
   }
 }
