@@ -479,6 +479,7 @@ form .submitBtn:active {
   }
   .skills {
     margin: 1rem 0;
+    overflow: hidden;
   }
   .skillsContent {
     margin-top: 2rem;
