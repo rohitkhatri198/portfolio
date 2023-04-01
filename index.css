@@ -170,6 +170,9 @@ a {
   color: white;
 }
 /* about */
+.about{
+    overflow: hidden;
+}
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
