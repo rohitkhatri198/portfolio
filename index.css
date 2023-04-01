@@ -527,8 +527,8 @@ form .submitBtn:active {
   }
   textarea {
     height: 11vh;
-    width: 67vw;
-    font-size: 4.8vw;
+    width: 100%;
+    font-size: 5vw;
   }
   form .submitBtn {
     width: 100%;
