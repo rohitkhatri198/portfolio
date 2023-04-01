@@ -55,6 +55,9 @@ body {
   color: #efefef;
   width: 30vw;
 }
+.wobble{
+    animation: blink 0.7s infinite;
+}
 .desc {
   font-family: "Heebo";
   font-style: normal;
@@ -221,6 +224,9 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+.skillsContent2{
+    display: none;
+}
 .skillsContent .skillItem {
   padding: 1rem 2rem;
   margin-bottom: 1.5rem;
@@ -232,15 +238,19 @@ a {
   color: #efefef;
   font-family: "Heebo";
 }
+
+
 @keyframes blink {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+   
+  }
+  100% {
+    opacity: 0;
+    
   }
 }
 
@@ -330,14 +340,15 @@ a {
     font-size: 6.7vw;
     margin: 1rem 0;
   }
-  .skillsContent {
-    display: flex;
-    flex-wrap: wrap;
+  .skillsContent{
+    display: none;
+  }
+  .skillsContent2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.5vw;
   }
-  .skillsContent .skillItem {
+  .skillsContent2 .skillItem {
     padding: 0.5rem 1rem;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
@@ -345,6 +356,14 @@ a {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     text-align: center;
+    color: #efefef;
+  font-weight: 600;
+    font-family: "Heebo";
+  }
+  .skillItem:nth-child(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .skills{
     margin: 1rem 0;
