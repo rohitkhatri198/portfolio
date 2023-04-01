@@ -527,11 +527,10 @@ form .submitBtn:active {
     font-size: 4.8vw;
   }
   form .submitBtn {
+    width: 100%;
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
-    font-size: 6.7vw;
-    margin: 0.65rem 0;
+    font-size: 5.7vw;
     justify-content: center;
-    width: 70%;
   }
 }
