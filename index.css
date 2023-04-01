@@ -6,12 +6,16 @@
 body {
   background: rgb(2, 2, 12);
 }
+.container {
+}
 .content {
   padding: 0 8rem;
 }
 .nav {
+  background: rgba(2, 2, 12, 0.747);
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   gap: 3vw;
   padding: 2.5rem 5rem;
   font-family: "Heebo";
@@ -33,6 +37,7 @@ body {
 .navItems:active {
   color: rgb(33, 60, 238);
 }
+/* banner */
 .banner {
   display: flex;
   gap: 4vw;
@@ -48,7 +53,7 @@ body {
   font-size: 3.6vw;
   line-height: 80px;
   color: #efefef;
-  width: 36vw;
+  width: 30vw;
 }
 .desc {
   font-family: "Heebo";
@@ -80,7 +85,7 @@ body {
     transform: scale(0.96);
 } */
 
-button {
+.button {
   display: flex;
   cursor: pointer;
   justify-content: flex-start;
@@ -101,7 +106,10 @@ button {
   animation-delay: 4s;
 }
 
-button:active {
+.button:hover {
+  transform: translateY(-3rem);
+}
+.button:active {
   transform: scale(0.96);
   transition: transform 0.2s ease;
 }
@@ -123,7 +131,6 @@ button:active {
 .card.is-flipped {
   transform: translateX(-100%) rotateY(-180deg);
   background-color: rgb(23, 26, 31);
-
 }
 
 .card__face {
@@ -137,8 +144,8 @@ button:active {
   font-size: 40px;
   backface-visibility: hidden;
 }
-.card .back-side{
-    /* background: slateblue; */
+.card .back-side {
+  /* background: slateblue; */
   transform: rotateY(180deg);
 }
 .profile {
@@ -150,7 +157,79 @@ button:active {
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
+/* about */
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  padding: 5rem 0;
+}
+.heading {
+  text-align: center;
+  color: #efefef;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6vw;
+}
+.info {
+  color: #efefef;
+  font-family: "Heebo";
+}
+.aboutContent h3 {
+  font-size: 2.1vw;
+  color: white;
+  font-family: "Heebo";
+  margin-bottom: 1rem;
+}
+.info p {
+  color: #efefef;
+  font-family: "Heebo";
+  margin: 1.5rem 0;
+  line-height: 1.8vw;
+  font-size: 1vw;
+}
+.info .bold {
+  font-weight: 700;
+}
+.contact {
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  background: rgb(33, 60, 238);
+  border-radius: 10px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 29px;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  border: none;
+  transition: transform 0.2s ease;
+}
+.contact:active {
+  transform: scale(0.96);
+}
+.skillsContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillsContent .skillItem {
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  font-size: 1.5vw;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #efefef;
+  font-family: "Heebo";
+}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -186,7 +265,7 @@ button:active {
     justify-content: center;
   }
   .banner {
-    padding: 0;
+    padding: 4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,5 +292,55 @@ button:active {
   }
   .navItems {
     display: none;
+  }
+  .aboutContent {
+    display: block;
+    padding: 2rem 0;
+  }
+  .heading {
+    font-size: 10vw;
+  }
+  .aboutContent h3 {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info p {
+    line-height: 3.9vw;
+    font-size: 2.3vw;
+    margin-bottom: 0.8rem;
+  }
+  .contact {
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    font-size: 4.7vw;
+    margin: 1rem 0;
+  }
+  .skillsContent {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5vw;
+  }
+  .skillsContent .skillItem {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 3.5vw;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    text-align: center;
+  }
+  .skills{
+    margin: 1rem 0;
+  }
+  .skillsContent{
+    margin-top: 2rem;
   }
 }

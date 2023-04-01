@@ -1,6 +1,6 @@
 var typingElement = document.querySelector("#typed");
 var typeArray = [
-  `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.`,
+  `A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.`,
 ];
 var index = 0,
   isAdding = true,
