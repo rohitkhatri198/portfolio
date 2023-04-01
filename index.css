@@ -501,6 +501,7 @@ form .submitBtn:active {
   }
   form {
     padding: 0rem;
+  
   }
   .contactUsCont {
     flex-direction: column-reverse;
