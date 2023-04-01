@@ -280,7 +280,7 @@ a {
     line-height: 28px;
   }
   .desc {
-    text-align: center;
+    /* text-align: center; */
     font-size: 3.458vw;
     line-height: 22px;
   }
@@ -292,7 +292,7 @@ a {
   .profile {
     width: 35vw;
   }
-  .navItems {
+  .nav{
     display: none;
   }
   .about{
