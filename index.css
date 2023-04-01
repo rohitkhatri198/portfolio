@@ -274,19 +274,23 @@ a {
     gap: 7vw;
   }
   .header {
-    width: 64vw;
+    width: 55vw;
     font-size: 6.5vw;
     text-align: center;
     line-height: 28px;
   }
   .desc {
-    /* text-align: center; */
+    text-align: center;
     font-size: 3.458vw;
     line-height: 22px;
+    padding: 2rem 0;
   }
   .button {
     width: 100%;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
     font-size: 5.7vw;
+    margin: 1rem 0;
     animation-delay: 4.5s;
   }
   .profile {
