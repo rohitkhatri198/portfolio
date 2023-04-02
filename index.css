@@ -287,7 +287,7 @@ form .textFields {
   padding: 2rem 0;
 }
 input {
-  background: rgb(187, 194, 255);
+  background: rgb(187, 194, 255,0.2);
   font-family: "Heebo";
   font-size: 1.2vw;
   border: none;
@@ -305,10 +305,17 @@ input::after {
 input:hover::after {
   right: 0;
 }
-input,
-textarea::placeholder {
-  color: rgb(50, 50, 50);
+input::placeholder, textarea::placeholder {
+  color: white;
   font-family: "Heebo";
+}
+input:focus,textarea:focus{
+    background:rgb(187, 194, 255) ;
+    
+}
+input:focus{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
 }
 
 input,
@@ -316,13 +323,18 @@ textarea:focus-visible {
   outline: none;
 }
 textarea {
-  background: rgb(187, 194, 255);
+  background: rgb(187, 194, 255,0.2);
   width: 39vw;
+  color: #ffffff;
   height: 9vw;
   font-size: 1.2vw;
   border: none;
   padding: 0.5rem;
   font-family: "Heebo";
+}
+textarea:focus{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
 }
 form .name {
   height: 3.2vw;
