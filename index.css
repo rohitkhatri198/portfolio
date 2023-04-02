@@ -528,7 +528,7 @@ form .submitBtn:active {
   }
   form .textFields {
     flex-direction: column;
-    gap: 11vw;
+    gap: 9vw;
   }
 
   form .name,

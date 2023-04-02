@@ -99,6 +99,8 @@ button.addEventListener("clicked", (e) => {
   },600)
 });
 
+// download resume
+
 function onButtonClick (){
     console.log("hello");
     fetch('Resume.pdf').then(response => {
@@ -118,5 +120,34 @@ var cards = document.querySelectorAll('.card');
 [...cards].forEach((card)=>{
   card.addEventListener( 'click', function() {
     card.classList.toggle('is-flipped') || card.classList.remove('is-flipped');
+  });
+});
+
+//form submission
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the default form submission
+
+  const formData = new FormData(form); // Create a new FormData object with the form data
+  const url = ''; // The URL of the server endpoint that handles the form submission
+
+  fetch(url, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text()) // Convert the response to text
+  .then(data => {
+    // Display the success or error message to the user
+    if (data.startsWith('Success')) {
+      alert('Your message was sent.');
+    } else {
+      alert('Your message was not sent.');
+    }
+  })
+  .catch(error => {
+    console.error(error);
+    alert('An error occurred while sending your message.');
   });
 });
