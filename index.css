@@ -290,6 +290,7 @@ input {
   background: rgb(187, 194, 255,0.2);
   font-family: "Heebo";
   font-size: 1.2vw;
+  color: white;
   border: none;
   position: relative;
 }
