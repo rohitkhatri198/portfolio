@@ -523,6 +523,7 @@ form .submitBtn:active {
   }
   .contactUsCont .pic {
     width: 35vw;
+    display: none;
   }
   form .textFields {
     flex-direction: column;
